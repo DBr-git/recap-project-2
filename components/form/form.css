@@ -20,7 +20,7 @@
 .form-question--input {
   width: 100%;
   max-width: 500px;
-  height: 6rem;
+  height: 4rem;
 }
 
 .form-answer {
@@ -30,7 +30,7 @@
 .form-answer--input {
   width: 100%;
   max-width: 500px;
-  height: 6rem;
+  height: 4rem;
 }
 
 .form-tag {
@@ -50,4 +50,8 @@
   display: block;
   margin: 0 auto 2rem auto;
   padding: 0.5rem 2rem;
+}
+
+.characterCounter {
+  text-align: end;
 }

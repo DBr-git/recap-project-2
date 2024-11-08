@@ -1,5 +1,7 @@
 console.clear();
 
+/* -------------------------------------- */
+
 const form = document.querySelector('[data-js="form"]');
 const cardList = document.querySelector('[data-js="cardList"]');
 
@@ -69,3 +71,37 @@ form.addEventListener("submit", (event) => {
     answerElement.classList.toggle("card__answer--active");
   });
 });
+
+/* -------------------------------------- */
+
+// Implementing Characters Left Counter
+
+const characterCounterQuestion = document.querySelector(
+  '[data-js="characterCounterQuestion"]'
+);
+const questionInputElement = document.querySelector(
+  '[data-js="questionInputElement"]'
+);
+
+questionInputElement.addEventListener("input", () => {
+  let counter = Number(questionInputElement.value.length);
+  let charactersLeft = 150;
+  charactersLeft = charactersLeft - counter;
+  characterCounterQuestion.textContent = `${charactersLeft} characters left`;
+});
+
+const characterCounterAnswer = document.querySelector(
+  '[data-js="characterCounterAnswer"]'
+);
+const answerInputElement = document.querySelector(
+  '[data-js="answerInputElement"]'
+);
+
+answerInputElement.addEventListener("input", () => {
+  let counter = Number(answerInputElement.value.length);
+  let charactersLeft = 150;
+  charactersLeft = charactersLeft - counter;
+  characterCounterAnswer.textContent = `${charactersLeft} characters left`;
+});
+
+/* -------------------------------------- */

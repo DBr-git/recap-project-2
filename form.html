@@ -7,7 +7,6 @@
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./js/form.js" defer></script>
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -21,11 +20,24 @@
             <textarea
               class="form-question--input"
               name="questionInput"
+              maxlength="150"
+              data-js="questionInputElement"
             ></textarea>
+            <p class="characterCounter" data-js="characterCounterQuestion">
+              150 characters left
+            </p>
           </li>
           <li class="form-list__item">
             <p class="form-answer">Your answer:</p>
-            <textarea class="form-answer--input" name="answerInput"></textarea>
+            <textarea
+              class="form-answer--input"
+              name="answerInput"
+              maxlength="150"
+              data-js="answerInputElement"
+            ></textarea>
+            <p class="characterCounter" data-js="characterCounterAnswer">
+              150 characters left
+            </p>
           </li>
           <li class="form-list__item">
             <p class="form-tag">Tag:</p>
