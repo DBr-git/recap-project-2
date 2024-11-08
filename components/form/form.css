@@ -2,6 +2,7 @@
   padding: 8rem 2rem 4rem 2rem;
   max-width: 45rem;
   margin: 0 auto;
+  text-align: center;
 }
 
 .form-list {
@@ -11,20 +12,32 @@
   margin: 0 0 2rem;
 }
 
+.form-question {
+  text-align: start;
+}
+
 .form-question--input {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   height: 6rem;
+}
+
+.form-answer {
+  text-align: start;
 }
 
 .form-answer--input {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   height: 6rem;
 }
 
+.form-tag {
+  text-align: start;
+}
+
 .form-tag--input {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   height: 2rem;
 }
