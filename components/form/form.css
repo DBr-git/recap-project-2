@@ -1,0 +1,39 @@
+.form {
+  padding: 8rem 2rem 4rem 2rem;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.form-list {
+}
+
+.form-list__item {
+  margin: 0 0 2rem;
+}
+
+.form-question--input {
+  width: 90%;
+  max-width: 500px;
+  height: 6rem;
+}
+
+.form-answer--input {
+  width: 90%;
+  max-width: 500px;
+  height: 6rem;
+}
+
+.form-tag--input {
+  width: 90%;
+  max-width: 500px;
+  height: 2rem;
+}
+
+.form-button {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem 2rem;
+}
