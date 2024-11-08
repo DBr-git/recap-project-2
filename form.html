@@ -7,31 +7,36 @@
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./js/form.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz-App</h1>
     </header>
     <main class="main-form">
-      <form class="form">
+      <form class="form" data-js="form">
         <ul class="form-list">
           <li class="form-list__item">
             <p class="form-question">Your question:</p>
-            <textarea class="form-question--input"></textarea>
+            <textarea
+              class="form-question--input"
+              name="questionInput"
+            ></textarea>
           </li>
           <li class="form-list__item">
             <p class="form-answer">Your answer:</p>
-            <textarea class="form-answer--input"></textarea>
+            <textarea class="form-answer--input" name="answerInput"></textarea>
           </li>
           <li class="form-list__item">
             <p class="form-tag">Tag:</p>
-            <input class="form-tag--input" type="text" />
+            <input class="form-tag--input" type="text" name="tagInput" />
           </li>
           <li class="form-list__item">
             <button class="form-button" type="submit">Submit</button>
           </li>
         </ul>
       </form>
+      <ul class="card-list" data-js="cardList"></ul>
     </main>
     <nav class="navigation">
       <ul class="navigation__list">
